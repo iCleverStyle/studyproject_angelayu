@@ -20,6 +20,7 @@
 		D5DC6DC02D905B2A0063FC7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5DC6DC12D905B2A0063FC7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5DC6DC22D905B2A0063FC7A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D5DC6DD82D90603C0063FC7A /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +37,7 @@
 		D5DC6D902D9050E60063FC7A = {
 			isa = PBXGroup;
 			children = (
+				D5DC6DD82D90603C0063FC7A /* .gitignore */,
 				D5DC6DC32D905B2A0063FC7A /* studyProjectUIkit */,
 				D5DC6D9A2D9050E60063FC7A /* Products */,
 			);
