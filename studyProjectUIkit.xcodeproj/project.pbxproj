@@ -9,8 +9,10 @@
 /* Begin PBXBuildFile section */
 		D5DC6DC42D905B2A0063FC7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DC6DBD2D905B2A0063FC7A /* AppDelegate.swift */; };
 		D5DC6DC52D905B2A0063FC7A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DC6DBE2D905B2A0063FC7A /* SceneDelegate.swift */; };
-		D5DC6DC62D905B2A0063FC7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DC6DC22D905B2A0063FC7A /* ViewController.swift */; };
 		D5DC6DC72D905B2A0063FC7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5DC6DC02D905B2A0063FC7A /* Assets.xcassets */; };
+		D5DC6DDF2D9068BE0063FC7A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DC6DDC2D9068BE0063FC7A /* HomeViewController.swift */; };
+		D5DC6DE02D9068BE0063FC7A /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DC6DDA2D9068BE0063FC7A /* HomeHeaderView.swift */; };
+		D5DC6DE12D9068BE0063FC7A /* HomeButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DC6DD92D9068BE0063FC7A /* HomeButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,8 +21,10 @@
 		D5DC6DBE2D905B2A0063FC7A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D5DC6DC02D905B2A0063FC7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5DC6DC12D905B2A0063FC7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D5DC6DC22D905B2A0063FC7A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D5DC6DD82D90603C0063FC7A /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		D5DC6DD92D9068BE0063FC7A /* HomeButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeButtonView.swift; sourceTree = "<group>"; };
+		D5DC6DDA2D9068BE0063FC7A /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
+		D5DC6DDC2D9068BE0063FC7A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +60,6 @@
 			children = (
 				D5DC6DBD2D905B2A0063FC7A /* AppDelegate.swift */,
 				D5DC6DBE2D905B2A0063FC7A /* SceneDelegate.swift */,
-				D5DC6DC22D905B2A0063FC7A /* ViewController.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -116,8 +119,8 @@
 		D5DC6DCE2D905BC30063FC7A /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				D5DC6DDE2D9068BE0063FC7A /* Screens */,
 				D5DC6DD32D905C2F0063FC7A /* Components */,
-				D5DC6DD22D905C260063FC7A /* Sceens */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -143,13 +146,6 @@
 			children = (
 			);
 			path = StorageServices;
-			sourceTree = "<group>";
-		};
-		D5DC6DD22D905C260063FC7A /* Sceens */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Sceens;
 			sourceTree = "<group>";
 		};
 		D5DC6DD32D905C2F0063FC7A /* Components */ = {
@@ -189,6 +185,32 @@
 			children = (
 			);
 			path = Carousels;
+			sourceTree = "<group>";
+		};
+		D5DC6DDB2D9068BE0063FC7A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D5DC6DDA2D9068BE0063FC7A /* HomeHeaderView.swift */,
+				D5DC6DD92D9068BE0063FC7A /* HomeButtonView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D5DC6DDD2D9068BE0063FC7A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D5DC6DDB2D9068BE0063FC7A /* Views */,
+				D5DC6DDC2D9068BE0063FC7A /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D5DC6DDE2D9068BE0063FC7A /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				D5DC6DDD2D9068BE0063FC7A /* Home */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,7 +287,9 @@
 			files = (
 				D5DC6DC42D905B2A0063FC7A /* AppDelegate.swift in Sources */,
 				D5DC6DC52D905B2A0063FC7A /* SceneDelegate.swift in Sources */,
-				D5DC6DC62D905B2A0063FC7A /* ViewController.swift in Sources */,
+				D5DC6DDF2D9068BE0063FC7A /* HomeViewController.swift in Sources */,
+				D5DC6DE02D9068BE0063FC7A /* HomeHeaderView.swift in Sources */,
+				D5DC6DE12D9068BE0063FC7A /* HomeButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

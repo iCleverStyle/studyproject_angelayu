@@ -19,10 +19,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let window = UIWindow(windowScene: windowScene)
         
         // Создаем корневой контроллер
-        let rootViewController = ViewController()
+        let homeViewController = HomeViewController()
         
-        // Создаем navigation controller с корневым контроллером (опционально)
-        let navigationController = UINavigationController(rootViewController: rootViewController)
+        // Создаем navigation controller с корневым контроллером
+        let navigationController = UINavigationController(rootViewController: homeViewController)
+        navigationController.navigationBar.isHidden = false
         
         // Устанавливаем rootViewController для окна
         window.rootViewController = navigationController
