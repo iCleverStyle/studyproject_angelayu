@@ -6,30 +6,21 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D5DC6DC42D905B2A0063FC7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DC6DBD2D905B2A0063FC7A /* AppDelegate.swift */; };
+		D5DC6DC52D905B2A0063FC7A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DC6DBE2D905B2A0063FC7A /* SceneDelegate.swift */; };
+		D5DC6DC62D905B2A0063FC7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DC6DC22D905B2A0063FC7A /* ViewController.swift */; };
+		D5DC6DC72D905B2A0063FC7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5DC6DC02D905B2A0063FC7A /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		D5DC6D992D9050E60063FC7A /* studyProjectUIkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = studyProjectUIkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5DC6DBD2D905B2A0063FC7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D5DC6DBE2D905B2A0063FC7A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D5DC6DC02D905B2A0063FC7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D5DC6DC12D905B2A0063FC7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5DC6DC22D905B2A0063FC7A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		D5DC6DAB2D9050E70063FC7A /* Exceptions for "studyProjectUIkit" folder in "studyProjectUIkit" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = D5DC6D982D9050E60063FC7A /* studyProjectUIkit */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		D5DC6D9B2D9050E60063FC7A /* studyProjectUIkit */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				D5DC6DAB2D9050E70063FC7A /* Exceptions for "studyProjectUIkit" folder in "studyProjectUIkit" target */,
-			);
-			path = studyProjectUIkit;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		D5DC6D962D9050E60063FC7A /* Frameworks */ = {
@@ -45,7 +36,7 @@
 		D5DC6D902D9050E60063FC7A = {
 			isa = PBXGroup;
 			children = (
-				D5DC6D9B2D9050E60063FC7A /* studyProjectUIkit */,
+				D5DC6DC32D905B2A0063FC7A /* studyProjectUIkit */,
 				D5DC6D9A2D9050E60063FC7A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +47,146 @@
 				D5DC6D992D9050E60063FC7A /* studyProjectUIkit.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		D5DC6DBF2D905B2A0063FC7A /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				D5DC6DBD2D905B2A0063FC7A /* AppDelegate.swift */,
+				D5DC6DBE2D905B2A0063FC7A /* SceneDelegate.swift */,
+				D5DC6DC22D905B2A0063FC7A /* ViewController.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		D5DC6DC32D905B2A0063FC7A /* studyProjectUIkit */ = {
+			isa = PBXGroup;
+			children = (
+				D5DC6DCE2D905BC30063FC7A /* UI */,
+				D5DC6DCF2D905BCD0063FC7A /* Services */,
+				D5DC6DCA2D905B550063FC7A /* Core */,
+				D5DC6DC92D905B340063FC7A /* Resources */,
+				D5DC6DBF2D905B2A0063FC7A /* Application */,
+			);
+			path = studyProjectUIkit;
+			sourceTree = "<group>";
+		};
+		D5DC6DC92D905B340063FC7A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D5DC6DC12D905B2A0063FC7A /* Info.plist */,
+				D5DC6DC02D905B2A0063FC7A /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D5DC6DCA2D905B550063FC7A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D5DC6DCB2D905B650063FC7A /* Extentions */,
+				D5DC6DCC2D905B750063FC7A /* Protocols */,
+				D5DC6DCD2D905B820063FC7A /* Helpers */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		D5DC6DCB2D905B650063FC7A /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		D5DC6DCC2D905B750063FC7A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		D5DC6DCD2D905B820063FC7A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		D5DC6DCE2D905BC30063FC7A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				D5DC6DD32D905C2F0063FC7A /* Components */,
+				D5DC6DD22D905C260063FC7A /* Sceens */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		D5DC6DCF2D905BCD0063FC7A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D5DC6DD12D905BFC0063FC7A /* StorageServices */,
+				D5DC6DD02D905BED0063FC7A /* NetworkServices */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D5DC6DD02D905BED0063FC7A /* NetworkServices */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetworkServices;
+			sourceTree = "<group>";
+		};
+		D5DC6DD12D905BFC0063FC7A /* StorageServices */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = StorageServices;
+			sourceTree = "<group>";
+		};
+		D5DC6DD22D905C260063FC7A /* Sceens */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sceens;
+			sourceTree = "<group>";
+		};
+		D5DC6DD32D905C2F0063FC7A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D5DC6DD52D905C490063FC7A /* Labels */,
+				D5DC6DD42D905C410063FC7A /* Buttons */,
+				D5DC6DD72D905C690063FC7A /* Carousels */,
+				D5DC6DD62D905C580063FC7A /* SearchBars */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		D5DC6DD42D905C410063FC7A /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		D5DC6DD52D905C490063FC7A /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Labels;
+			sourceTree = "<group>";
+		};
+		D5DC6DD62D905C580063FC7A /* SearchBars */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SearchBars;
+			sourceTree = "<group>";
+		};
+		D5DC6DD72D905C690063FC7A /* Carousels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Carousels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -72,9 +203,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				D5DC6D9B2D9050E60063FC7A /* studyProjectUIkit */,
 			);
 			name = studyProjectUIkit;
 			packageProductDependencies = (
@@ -122,6 +250,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5DC6DC72D905B2A0063FC7A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +261,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5DC6DC42D905B2A0063FC7A /* AppDelegate.swift in Sources */,
+				D5DC6DC52D905B2A0063FC7A /* SceneDelegate.swift in Sources */,
+				D5DC6DC62D905B2A0063FC7A /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,7 +279,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YWY49JTZKC;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = studyProjectUIkit/Info.plist;
+				INFOPLIST_FILE = studyProjectUIkit/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 16;
@@ -177,7 +309,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YWY49JTZKC;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = studyProjectUIkit/Info.plist;
+				INFOPLIST_FILE = studyProjectUIkit/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 16;
