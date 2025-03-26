@@ -13,6 +13,7 @@
 		D5DC6DDF2D9068BE0063FC7A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DC6DDC2D9068BE0063FC7A /* HomeViewController.swift */; };
 		D5DC6DE02D9068BE0063FC7A /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DC6DDA2D9068BE0063FC7A /* HomeHeaderView.swift */; };
 		D5DC6DE12D9068BE0063FC7A /* HomeButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DC6DD92D9068BE0063FC7A /* HomeButtonView.swift */; };
+		D5DC6E272D93CA9B0063FC7A /* DiceeGameSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DC6E252D93CA9B0063FC7A /* DiceeGameSceneViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		D5DC6DD92D9068BE0063FC7A /* HomeButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeButtonView.swift; sourceTree = "<group>"; };
 		D5DC6DDA2D9068BE0063FC7A /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
 		D5DC6DDC2D9068BE0063FC7A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		D5DC6E252D93CA9B0063FC7A /* DiceeGameSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceeGameSceneViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,9 +210,18 @@
 		D5DC6DDE2D9068BE0063FC7A /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				D5DC6E262D93CA9B0063FC7A /* 4_DiceeGame */,
 				D5DC6DDD2D9068BE0063FC7A /* Home */,
 			);
 			path = Screens;
+			sourceTree = "<group>";
+		};
+		D5DC6E262D93CA9B0063FC7A /* 4_DiceeGame */ = {
+			isa = PBXGroup;
+			children = (
+				D5DC6E252D93CA9B0063FC7A /* DiceeGameSceneViewController.swift */,
+			);
+			path = 4_DiceeGame;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +300,7 @@
 				D5DC6DC52D905B2A0063FC7A /* SceneDelegate.swift in Sources */,
 				D5DC6DDF2D9068BE0063FC7A /* HomeViewController.swift in Sources */,
 				D5DC6DE02D9068BE0063FC7A /* HomeHeaderView.swift in Sources */,
+				D5DC6E272D93CA9B0063FC7A /* DiceeGameSceneViewController.swift in Sources */,
 				D5DC6DE12D9068BE0063FC7A /* HomeButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -6,7 +6,7 @@ class HomeHeaderView: UIView {
     
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
-        label.text = "Проект на UIKit без Interface Builder"
+        label.text = "Проекты курса Angela Yu"
         label.font = UIFont.systemFont(ofSize: 20, weight: .bold)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -14,7 +14,7 @@ class HomeHeaderView: UIView {
     
     private lazy var subtitleLabel: UILabel = {
         let label = UILabel()
-        label.text = "Все элементы созданы программно"
+        label.text = "Все элементы созданы программно без BI"
         label.font = UIFont.systemFont(ofSize: 16, weight: .regular)
         label.textColor = .gray
         label.translatesAutoresizingMaskIntoConstraints = false
