@@ -126,7 +126,19 @@ extension HomeViewController: HomeButtonViewDelegate {
 extension HomeViewController: SceneListItemViewDelegate {
     func sceneListItemDidTap(_ view: SceneListItemView) {
         let scene = HomeScenesList.scenes[view.sceneIndex]
-        let viewController = scene.viewController.init()
+        
+        guard let viewControllerType = scene.viewController else {
+            let alert = UIAlertController(
+                title: "Информация",
+                message: "Проект еще не начат!",
+                preferredStyle: .alert
+            )
+            alert.addAction(UIAlertAction(title: "OK", style: .default))
+            present(alert, animated: true)
+            return
+        }
+        
+        let viewController = viewControllerType.init()
         navigationController?.pushViewController(viewController, animated: true)
     }
 } 

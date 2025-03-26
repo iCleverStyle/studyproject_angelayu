@@ -3,7 +3,7 @@ import UIKit
 struct HomeScene {
     let title: String
     let icon: UIImage?
-    let viewController: UIViewController.Type
+    let viewController: UIViewController.Type?
 }
 
 final class HomeScenesList {
@@ -16,7 +16,7 @@ final class HomeScenesList {
         HomeScene(
             title: "§5 Magic 8 Ball",
             icon: UIImage(named: "magicball_icon"),
-            viewController: DiceeGameSceneViewController.self
+            viewController: nil
         )
     ]
 } 
