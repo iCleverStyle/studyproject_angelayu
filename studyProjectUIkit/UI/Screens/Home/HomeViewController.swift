@@ -86,11 +86,11 @@ class HomeViewController: UIViewController {
             buttonView.heightAnchor.constraint(equalToConstant: 80),
             
             // Констрейнты для scenesStackView внутри scrollView
-            scenesStackView.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: 16),
-            scenesStackView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: 16),
-            scenesStackView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor, constant: -16),
-            scenesStackView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor, constant: -16),
-            scenesStackView.widthAnchor.constraint(equalTo: scrollView.widthAnchor, constant: -32)
+            scenesStackView.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: 8),
+            scenesStackView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: 4),
+            scenesStackView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor, constant: -4),
+            scenesStackView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor, constant: -4),
+            scenesStackView.widthAnchor.constraint(equalTo: scrollView.widthAnchor, constant: -8)
         ])
         
         // Устанавливаем scrollView как расширяемый элемент в стеке
