@@ -14,6 +14,7 @@
 		D5DC6DE02D9068BE0063FC7A /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DC6DDA2D9068BE0063FC7A /* HomeHeaderView.swift */; };
 		D5DC6DE12D9068BE0063FC7A /* HomeButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DC6DD92D9068BE0063FC7A /* HomeButtonView.swift */; };
 		D5DC6E272D93CA9B0063FC7A /* DiceeGameSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DC6E252D93CA9B0063FC7A /* DiceeGameSceneViewController.swift */; };
+		D5DC6E292D93CEC00063FC7A /* SceneListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DC6E282D93CEC00063FC7A /* SceneListItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		D5DC6DDA2D9068BE0063FC7A /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
 		D5DC6DDC2D9068BE0063FC7A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D5DC6E252D93CA9B0063FC7A /* DiceeGameSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceeGameSceneViewController.swift; sourceTree = "<group>"; };
+		D5DC6E282D93CEC00063FC7A /* SceneListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneListItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +166,7 @@
 		D5DC6DD42D905C410063FC7A /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
+				D5DC6E282D93CEC00063FC7A /* SceneListItemView.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 			files = (
 				D5DC6DC42D905B2A0063FC7A /* AppDelegate.swift in Sources */,
 				D5DC6DC52D905B2A0063FC7A /* SceneDelegate.swift in Sources */,
+				D5DC6E292D93CEC00063FC7A /* SceneListItemView.swift in Sources */,
 				D5DC6DDF2D9068BE0063FC7A /* HomeViewController.swift in Sources */,
 				D5DC6DE02D9068BE0063FC7A /* HomeHeaderView.swift in Sources */,
 				D5DC6E272D93CA9B0063FC7A /* DiceeGameSceneViewController.swift in Sources */,

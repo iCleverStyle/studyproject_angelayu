@@ -103,36 +103,14 @@ class HomeViewController: UIViewController {
             ("§4 Dicee game", DiceeGameSceneViewController.self)
         ]
         
-        scenes.forEach { title, viewController in
-            var configuration = UIButton.Configuration.filled()
-            configuration.title = title
-            configuration.baseBackgroundColor = .white
-            configuration.baseForegroundColor = .systemBlue
-            configuration.contentInsets = NSDirectionalEdgeInsets(top: 12, leading: 16, bottom: 12, trailing: 16)
-            configuration.cornerStyle = .medium
-            
-            let button = UIButton(configuration: configuration)
-            button.layer.borderWidth = 1
-            button.layer.borderColor = UIColor.systemGray4.cgColor
-            button.addTarget(self, action: #selector(sceneButtonTapped(_:)), for: .touchUpInside)
-            button.tag = scenesStackView.arrangedSubviews.count
-            scenesStackView.addArrangedSubview(button)
+        scenes.enumerated().forEach { index, scene in
+            let itemView = SceneListItemView()
+            itemView.delegate = self
+            itemView.sceneIndex = index
+            itemView.configure(with: scene.0)
+            itemView.translatesAutoresizingMaskIntoConstraints = false
+            scenesStackView.addArrangedSubview(itemView)
         }
-    }
-    
-    // MARK: - Actions
-    
-    @objc private func sceneButtonTapped(_ sender: UIButton) {
-        let viewController: UIViewController
-        
-        switch sender.tag {
-        case 0:
-            viewController = DiceeGameSceneViewController()
-        default:
-            return
-        }
-        
-        navigationController?.pushViewController(viewController, animated: true)
     }
 }
 
@@ -144,5 +122,22 @@ extension HomeViewController: HomeButtonViewDelegate {
         let alert = UIAlertController(title: "Действие", message: "Вы нажали на кнопку", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default))
         present(alert, animated: true)
+    }
+}
+
+// MARK: - SceneListItemViewDelegate
+
+extension HomeViewController: SceneListItemViewDelegate {
+    func sceneListItemDidTap(_ view: SceneListItemView) {
+        let viewController: UIViewController
+        
+        switch view.sceneIndex {
+        case 0:
+            viewController = DiceeGameSceneViewController()
+        default:
+            return
+        }
+        
+        navigationController?.pushViewController(viewController, animated: true)
     }
 } 
