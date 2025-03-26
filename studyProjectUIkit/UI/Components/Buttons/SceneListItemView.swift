@@ -109,7 +109,7 @@ class SceneListItemView: UIView {
             iconImageView.heightAnchor.constraint(equalToConstant: 24),
             
             // Констрейнты для шеврона
-            chevronImageView.widthAnchor.constraint(equalToConstant: 24),
+            chevronImageView.widthAnchor.constraint(equalToConstant: 16),
             chevronImageView.heightAnchor.constraint(equalToConstant: 24)
         ])
     }

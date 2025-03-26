@@ -99,15 +99,11 @@ class HomeViewController: UIViewController {
     }
     
     private func setupScenesList() {
-        let scenes = [
-            ("§4 Dicee game", DiceeGameSceneViewController.self)
-        ]
-        
-        scenes.enumerated().forEach { index, scene in
+        HomeScenesList.scenes.enumerated().forEach { index, scene in
             let itemView = SceneListItemView()
             itemView.delegate = self
             itemView.sceneIndex = index
-            itemView.configure(with: scene.0)
+            itemView.configure(with: scene.title, icon: scene.icon)
             itemView.translatesAutoresizingMaskIntoConstraints = false
             scenesStackView.addArrangedSubview(itemView)
         }
@@ -129,15 +125,8 @@ extension HomeViewController: HomeButtonViewDelegate {
 
 extension HomeViewController: SceneListItemViewDelegate {
     func sceneListItemDidTap(_ view: SceneListItemView) {
-        let viewController: UIViewController
-        
-        switch view.sceneIndex {
-        case 0:
-            viewController = DiceeGameSceneViewController()
-        default:
-            return
-        }
-        
+        let scene = HomeScenesList.scenes[view.sceneIndex]
+        let viewController = scene.viewController.init()
         navigationController?.pushViewController(viewController, animated: true)
     }
 } 
